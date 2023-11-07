@@ -1,0 +1,201 @@
+/* Play font */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+/* Roboto font */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2');
+}
+
+:root {
+  --color-main-light: #ffffff;
+  --color-main-brand: #2b7fff;
+  --color-main-dark: #011c44;
+  --color-secondary-gray: #4a4a4a;
+  --color-secondary-brown: #747272;
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+
+/* Base */
+body {
+  color: var(--color-main-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.accent {
+  color: var(--color-main-brand);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.white-text {
+  color: var(--color-main-light);
+}
+
+/* Header */
+.header-logo {
+  color: var(--color-main-brand);
+  font-family: Play, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-decoration: none;
+}
+
+.header-link {
+  color: var(--color-main-dark);
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-main-brand);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-main-brand);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+}
+
+.button {
+  background-color: var(--color-main-brand);
+  border: 2px solid var(--color-main-brand);
+  border-radius: 1px;
+  cursor: pointer;
+  color: var(--color-main-light);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--color-main-brand);
+  border-radius: 1px;
+  color: var(--color-main-dark);
+}
+
+.button-description {
+  font-size: 12px;
+  color: var(--color-secondary-gray);
+}
+
+/* Introduction section */
+.introduction-title {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.introduction-text {
+  font-size: 22px;
+}
+
+/* Advantages section */
+.advantages-title {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* Procedures section */
+.procedures-title {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.procedures-text {
+  font-size: 22px;
+}
+
+/* Contacts section */
+.contacts-title {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.contacts-booking {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.contacts-policy {
+  color: var(--color-secondary-brown);
+  font-size: 12px;
+}
+
+.contacts-link,
+.contacts-link:hover,
+.contacts-link:visited {
+  color: inherit;
+}
+
+/* Footer */
+.main-background-color {
+  background-color: var(--color-main-dark);
+}
+
+.footer-logo {
+  color: var(--color-main-brand);
+  font-family: Play, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link,
+.footer-link:hover {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.copyright-text {
+  font-size: 13px;
+  color: var(--color-secondary-brown);
+}
