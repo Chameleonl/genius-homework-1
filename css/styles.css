@@ -44,11 +44,40 @@
   box-sizing: border-box;
 }
 
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-main-dark);
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 address {
@@ -76,13 +105,37 @@ ul {
 }
 
 /* Header */
+.header-container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  gap: 56px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .header-logo {
   color: var(--color-main-brand);
   font-family: Play, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 0.8;
   text-decoration: none;
+  max-width: 74px;
 }
 
 .header-link {
@@ -94,16 +147,21 @@ ul {
 .header-link:hover {
   color: var(--color-main-brand);
   font-family: Roboto, sans-serif;
-  font-weight: 700;
   text-decoration: none;
 }
 
 /* Hero section */
+.hero-description {
+  margin-bottom: 16;
+}
+
 .hero-title {
   color: var(--color-main-brand);
   font-family: Play, sans-serif;
   font-size: 140px;
   font-weight: 700;
+  margin-bottom: 40px;
+  max-width: 529px;
 }
 
 .button {
@@ -114,6 +172,10 @@ ul {
   color: var(--color-main-light);
   font-weight: 600;
   font-size: 18px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 32px;
+  margin-bottom: 14px;
 }
 
 .button:hover {
@@ -126,6 +188,7 @@ ul {
 .button-description {
   font-size: 12px;
   color: var(--color-secondary-gray);
+  max-width: 238px;
 }
 
 /* Introduction section */
@@ -133,10 +196,13 @@ ul {
   font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
+  max-width: 529px;
+  margin-bottom: 40px;
 }
 
 .introduction-text {
   font-size: 22px;
+  max-width: 709px;
 }
 
 /* Advantages section */
@@ -144,6 +210,7 @@ ul {
   font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
+  text-align: center;
 }
 
 /* Procedures section */
@@ -151,6 +218,7 @@ ul {
   font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
+  text-align: center;
 }
 
 .procedures-text {
@@ -162,6 +230,7 @@ ul {
   font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
+  text-align: center;
 }
 
 .contacts-booking {
@@ -185,18 +254,57 @@ ul {
   background-color: var(--color-main-dark);
 }
 
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
 .footer-logo {
   color: var(--color-main-brand);
   font-family: Play, sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
+  max-width: 83px;
 }
 
-.footer-link,
-.footer-link:hover {
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.address-link,
+.address-link:hover {
   font-size: 16px;
   text-decoration: none;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .copyright-text {
