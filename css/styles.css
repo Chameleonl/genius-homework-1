@@ -52,6 +52,10 @@
   box-sizing: border-box;
 }
 
+:hover {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-main-dark);
   font-family: Roboto, sans-serif;
@@ -75,7 +79,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -100,13 +104,34 @@ ul {
   text-transform: capitalize;
 }
 
+.link {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-main-brand);
+  font-family: Roboto, sans-serif;
+}
+
 .white-text {
   color: var(--color-main-light);
 }
 
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
+
 .header-container {
+  align-items: center;
+  background: var(--color-main-light);
+  backdrop-filter: blur(10px);
   display: flex;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .header-nav {
@@ -114,7 +139,7 @@ ul {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 40px;
+  gap: 56px;
 }
 
 .header-menu {
@@ -146,22 +171,17 @@ ul {
   text-decoration: none;
 }
 
-.header-link:hover {
-  color: var(--color-main-brand);
-  font-family: Roboto, sans-serif;
-  text-decoration: none;
-}
-
 /* Hero section */
 .hero-section {
   background-image: url('../images/hero-background.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto;
+  height: 630px;
 }
 
 .hero-description {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .hero-title {
@@ -183,15 +203,19 @@ ul {
   padding: 16px 32px 16px 32px;
   border-radius: 32px;
   margin-bottom: 30px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
   background-color: transparent;
   border: 2px solid var(--color-main-brand);
-  border-radius: 1px;
   color: var(--color-main-dark);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
   padding: 16px 32px 16px 32px;
   border-radius: 32px;
+  margin-bottom: 30px;
 }
 
 .button-description {
@@ -203,6 +227,10 @@ ul {
 }
 
 /* Introduction section */
+.introduction-section {
+  padding-top: 50px;
+}
+
 .introduction-title {
   font-family: Play, sans-serif;
   font-size: 64px;
@@ -363,6 +391,15 @@ ul {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+
+.address-icon path {
+  fill: var(--color-main-light);
+  transition: fill 0.2s;
+}
+
+.address-icon:hover path {
+  fill: var(--color-main-brand);
 }
 
 .copyright-text {
